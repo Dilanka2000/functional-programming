@@ -13,5 +13,10 @@ object Q04 extends App{
   printf("Enter the Number : ");
   var num = scala.io.StdIn.readInt();
 
-  println(if(isEven(num)) "EVEN" else "ODD")
+  if(num>=0) {
+    println(if (isEven(num)) "EVEN" else "ODD")
+  }
+  else{
+    println("Please enter a positive number")
+  }
 }

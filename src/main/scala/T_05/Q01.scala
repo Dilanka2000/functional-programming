@@ -6,7 +6,7 @@ object Q01 extends App{
       case x if(x == 2) => true
       case x if(x < 2) => false
       case x if(x%i == 0) => false
-      case x if(i*2 > x) => true
+      case x if(i*i > x) => true
       case _ => prime(n,i+1)
     }
   }
