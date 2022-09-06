@@ -10,7 +10,7 @@ object Q01 extends App{
 
     // traverse text
     for (i <- text) {
-      // Encrypt Uppercase letters
+      // Encrypt letters
       enResult += (i.asInstanceOf[Int] + k).asInstanceOf[Char];
     }
     enText = enResult;
@@ -24,7 +24,7 @@ object Q01 extends App{
 
     // traverse text
     for (i <- text) {
-      // Decrypt Uppercase letters
+      // Decrypt letters
       deResult += (i.asInstanceOf[Int] - k).asInstanceOf[Char];
     }
     deText = deResult;
