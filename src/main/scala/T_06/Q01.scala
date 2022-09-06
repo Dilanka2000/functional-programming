@@ -11,17 +11,12 @@ object Q01 extends App{
     // traverse text
     for (i <- text) {
       // Encrypt Uppercase letters
-      if (i.isUpper)
-        enResult += (i.asInstanceOf[Int] + k).asInstanceOf[Char];
-
-      // Encrypt Lowercase letters
-      else
-        enResult += (i.asInstanceOf[Int] + k).asInstanceOf[Char];
+      enResult += (i.asInstanceOf[Int] + k).asInstanceOf[Char];
     }
     enText = enResult;
 
     // print the encrypting string
-    print(enResult);
+    println("Encryption value is : " + enResult);
   }
 
   def decrypt(text:String=enText, k:Int=key):Unit = {
@@ -30,21 +25,15 @@ object Q01 extends App{
     // traverse text
     for (i <- text) {
       // Decrypt Uppercase letters
-      if (i.isUpper)
-        deResult += (i.asInstanceOf[Int] - k).asInstanceOf[Char];
-
-      // Decrypt Lowercase letters
-      else
-        deResult += (i.asInstanceOf[Int] - k).asInstanceOf[Char];
+      deResult += (i.asInstanceOf[Int] - k).asInstanceOf[Char];
     }
     deText = deResult;
 
     // print the decrypting string
-    print(deResult);
+    println("Decryption value is : " + deResult);
   }
 
   encrypt("aB@c567d");
-  println(enText)
 
   decrypt()
 
