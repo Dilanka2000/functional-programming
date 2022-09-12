@@ -33,9 +33,10 @@ object Q01 extends App{
     println("Decryption value is : " + deResult);
   }
 
-  encrypt("aB@c567d");
+  printf("Enter the text : ");
+  var txt = scala.io.StdIn.readLine();
+  encrypt(txt);
 
   decrypt()
 
 }
-
