@@ -17,8 +17,8 @@ class Rational(n:Int, d:Int) {
   def numerator = n
   def denomerator = d
 
-  def add(a:Rational) = new Rational(this.numerator*a.denomerator+this.denomerator*a.numerator,this.denomerator*a.denomerator)
+  def add(r:Rational) = new Rational(this.numerator*r.denomerator+this.denomerator*r.numerator,this.denomerator*r.denomerator)
   def neg = new Rational(-this.numerator,this.denomerator)
-  def -(a:Rational) = this.add(a.neg)
+  def -(r:Rational) = this.add(r.neg)
   override def toString = numerator + "/" + denomerator
 }
